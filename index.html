@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add items to Grocery Cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2>Order your daily Grocery</h2>
+                                <p>Special Offer, get extra rewards point when you order </p>
+                                <form action="#" id="search" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="Search here " id="search-item">
+                                    <input type="submit" id="submit-search-item" class="submit-search-item">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>Order any houseold equipments </p>
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>Exactly what you want<br>
+                        Reasonable prices</p>
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>Save time</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="items-list" class="container">
+        <h1 id="heading" class="heading">Grocery List</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/item1.jpg" class="item-image u-full-width">
+                    <div class="info-card">
+                        <h4>Chicken</h4>
+                        <p>Free Run</p>
+                        <img src="img/stars.png">
+                        <p class="price">$5 /lb  <span class="u-pull-right ">$4.5 /lb</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item2.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Mixed Vegetable</h4>
+                            <p>Your choice</p>
+                            <img src="img/stars.png">
+                            <p class="price">$5.65 /lb  <span class="u-pull-right ">$4 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to Cart</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item3.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Plant</h4>
+                            <p>For your balcony</p>
+                            <img src="img/stars.png">
+                            <p class="price">$20 /piece <span class="u-pull-right ">$15 /piece</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/item4.jpg" class="item-image u-full-width">
+                    <div class="info-card">
+                        <h4>Tomato</h4>
+                        <p>Fresh</p>
+                        <img src="img/stars.png">
+                        <p class="price">$2.34 /lb  <span class="u-pull-right ">$2 /lb</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item5.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Orange</h4>
+                            <p>Fresh</p>
+                            <img src="img/stars.png">
+                            <p class="price">$4.65 /lb  <span class="u-pull-right ">$3.99 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item6.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Banana</h4>
+                            <p>Fresh</p>
+                            <img src="img/stars.png">
+                            <p class="price">$2.23 /lb  <span class="u-pull-right ">$2.1 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/item7.jpg" class="item-image u-full-width">
+                    <div class="info-card">
+                        <h4>Green pepper</h4>
+                        <p>Fresh</p>
+                        <img src="img/stars.png">
+                        <p class="price">$2.56/lb  <span class="u-pull-right ">$2.11 /lb<span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item8.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Potato</h4>
+                            <p>Fresh</p>
+                            <img src="img/stars.png">
+                            <p class="price">$2.88 /lb  <span class="u-pull-right ">$1.9 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/item9.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Carrot</h4>
+                            <p>Farm fresh</p>
+                            <img src="img/stars.png">
+                            <p class="price">$1.88 /lb  <span class="u-pull-right ">$1.35 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/item10.jpg" class="item-image u-full-width">
+                        <div class="info-card">
+                            <h4>Onion</h4>
+                            <p>Fresh</p>
+                            <img src="img/stars.png">
+                            <p class="price">$2.55 /lb <span class="u-pull-right ">$12.3 /lb</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/item11.jpg" class="item-image u-full-width">
+                            <div class="info-card">
+                                <h4>Strawberry Yougurt</h4>
+                                <p>Authentic Taste</p>
+                                <img src="img/stars.png">
+                                <p class="price">$4.8 /piece  <span class="u-pull-right ">$4.3 /piece</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/item12.jpg" class="item-image u-full-width">
+                            <div class="info-card">
+                                <h4>Mango Juice</h4>
+                                <p>Tastey and sweet</p>
+                                <img src="img/stars.png">
+                                <p class="price">$2 /piece  <span class="u-pull-right ">$1.88 /piece</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">For Business</a>
+                                <a class="link" href="#">Become an Instructor</a>
+                                <a class="link" href="#">Mobile Applications</a>
+                                <a class="link" href="#">Support</a>
+                                <a class="link" href="#">Help</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">About Us</a>
+                                <a class="link" href="#">Work with us</a>
+                                <a class="link" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
