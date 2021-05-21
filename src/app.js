@@ -2,7 +2,7 @@
 const items = document.querySelector('#items-list'),
       shoppingCartContent = document.querySelector('#cart-content tbody'),
       clearCartBtn        = document.querySelector("#clear-cart");
-var itemsList         = [];
+let itemsList         = [];
 
 //Listener
 loadEventListeners();
